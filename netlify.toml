@@ -1,0 +1,12 @@
+# Do NOT set [build] publish here — @netlify/plugin-nextjs sets it automatically.
+# In Netlify UI: Site settings > Build & deploy > Build settings >
+# leave "Publish directory" empty so the Next.js plugin controls it.
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

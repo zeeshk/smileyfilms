@@ -1,0 +1,35 @@
+{
+  "name": "smilley-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "rm -rf .next && npx netlify deploy --prod --build",
+    "deploy:clean": "rm -rf .next node_modules/.cache && npm run build && npx netlify deploy --prod"
+  },
+  "dependencies": {
+    "framer-motion": "^12.30.0",
+    "lucide-react": "^0.577.0",
+    "netlify-cli": "^23.14.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.7",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
